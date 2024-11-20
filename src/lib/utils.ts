@@ -1,6 +1,8 @@
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
+// clsx setup
+// utility function to use magic ui
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
@@ -13,6 +15,8 @@ export function formatDate(date: string) {
   let targetDate = new Date(date).getTime();
   let timeDifference = Math.abs(currentDate - targetDate);
   let daysAgo = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+  // function to format date and time
 
   let fullDate = new Date(date).toLocaleString("en-us", {
     month: "long",
@@ -35,3 +39,5 @@ export function formatDate(date: string) {
     return `${fullDate} (${yearsAgo}y ago)`;
   }
 }
+
+// initial set up
