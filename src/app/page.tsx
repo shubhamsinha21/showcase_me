@@ -36,7 +36,7 @@ export default function page() {
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-                <AvatarFallback>{DATA.initials}</AvatarFallback>
+                {/* <AvatarFallback>{DATA.initials}</AvatarFallback> */}
               </Avatar>
             </BlurFade>
           </div>
@@ -54,6 +54,8 @@ export default function page() {
           </Markdown>
         </BlurFade>
       </section>
+
+      {/* work section */}
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
@@ -91,7 +93,6 @@ export default function page() {
             >
               <ResumeCard
                 key={education.school}
-                href={education.href}
                 logoUrl={education.logoUrl}
                 altText={education.school}
                 title={education.school}
@@ -163,7 +164,7 @@ export default function page() {
       </section>
 
       {/* hackathons */}
-      <section id="hackathons">
+      {/* <section id="hackathons">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -205,7 +206,7 @@ export default function page() {
             </ul>
           </BlurFade>
         </div>
-      </section>
+      </section> */}
 
       {/* contact */}
       <section id="contact">
@@ -221,13 +222,12 @@ export default function page() {
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Want to chat? Just shoot me a dm{" "}
                 <Link
-                  href={DATA.contact.social.X.url}
+                  href={DATA.contact.social.LinkedIn.url}
                   className="text-blue-500 hover:underline"
                 >
-                  with a direct question on twitter
+                  with a direct question on linkedin
                 </Link>{" "}
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
+                and I&apos;ll respond as soon as possible.
               </p>
             </div>
           </BlurFade>
