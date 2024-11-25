@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "Full Stack and Machine Learning Engineer turned visionary hustler. I love building things. Very active on LinkedIn.",
   summary:
-    "I pursued Computer Science and Engineering and graduated in 2023. Highly Energetic, Passionate, Hardworking Aspiring Enthusiast. Bigger goals want more hardwork. And that's what I look and hustling for. I wish to become the best in whatever i come across during my journey.",
+    "I pursued Computer Science and Engineering. Highly Energetic, Passionate, Hardworking Aspiring Enthusiast. Bigger goals want more hardwork. And that's what I look and hustling for. I wish to become the best in whatever i come across during my journey.",
   avatarUrl: "informal.jpg",
   skills: [
     "React",
