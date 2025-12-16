@@ -17,7 +17,7 @@ interface ResumeCardProps {
   href?: string;
   badges?: readonly string[];
   period: string;
-  description?: string | string[];
+  description?: string | readonly string[];
 }
 export const ResumeCard = ({
   logoUrl,
@@ -102,7 +102,7 @@ export const ResumeCard = ({
             >
               {Array.isArray(description) ? (
                 <ul className="list-disc pl-4 space-y-1 text-muted-foreground">
-                  {description.map((point, index) => (
+                  {(description as readonly string[]).map((point, index) => (
                     <li key={index}>{point}</li>
                   ))}
                 </ul>
