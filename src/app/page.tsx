@@ -8,8 +8,7 @@ import Markdown from "react-markdown";
 const BLUR_FADE_DELAY = 0.05;
 
 import React from "react";
-import { Avatar } from "@radix-ui/react-avatar";
-import { AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { ProjectCard } from "@/components/project-card";
 import { HackathonCard } from "@/components/hackathon-card";
@@ -63,11 +62,11 @@ export default function page() {
           </BlurFade>
           {DATA.work.map((work, id) => (
             <BlurFade
-              key={work.company}
+              key={`${work.company}-${work.start}`}
               delay={BLUR_FADE_DELAY * 6 + id * 0.05}
             >
               <ResumeCard
-                key={work.company}
+                key={`${work.company}-${work.start}`}
                 logoUrl={work.logoUrl}
                 altText={work.company}
                 title={work.company}
@@ -106,14 +105,28 @@ export default function page() {
 
       {/* skills */}
       <section id="skills">
-        <div className="flex min-h-0 flex-col gap-y-3">
+        <div className="flex min-h-0 flex-col gap-y-4">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
-          <div className="flex flex-wrap gap-1">
-            {DATA.skills.map((skill, id) => (
-              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <Badge key={skill}>{skill}</Badge>
+
+          <div className="flex flex-col gap-4">
+            {DATA.skills.map((group, groupIndex) => (
+              <BlurFade
+                key={group.category}
+                delay={BLUR_FADE_DELAY * 10 + groupIndex * 0.1}
+              >
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-sm font-semibold text-muted-foreground">
+                    {group.category}
+                  </h3>
+
+                  <div className="flex flex-wrap gap-1">
+                    {group.items.map((skill) => (
+                      <Badge key={skill}>{skill}</Badge>
+                    ))}
+                  </div>
+                </div>
               </BlurFade>
             ))}
           </div>
