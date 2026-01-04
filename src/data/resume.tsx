@@ -8,9 +8,9 @@ export const DATA = {
   // location: "",
   // locationLink: "",
   description:
-    "AI Solution Architect with experience across AI architecture, machine learning engineering, and automation workflows",
+    "Software Engineer with experience building end-to-end products, combining AI systems, full-stack development, and automation workflows.",
   summary:
-    "I’m an AI Solution Architect with hands-on experience designing and building production-grade AI systems. Over the past two years, I’ve worked across AI architecture, machine learning engineering, and automation, delivering real-world solutions such as large-scale WhatsApp automation and image-to-video generation pipelines. My focus is on building scalable, reliable AI products by combining applied machine learning, full-stack engineering, and API-driven system design.",
+    "I’m a Software Engineer with hands-on experience building production-grade applications from prototype to deployment. Over the past two years, I’ve worked across full-stack development, AI-powered systems, and automation, delivering real-world solutions such as large-scale WhatsApp automation platforms and AI-driven media processing pipelines. My work focuses on designing scalable, reliable products by combining modern web technologies, applied machine learning, API-driven architectures, and cloud-native deployment practices. I also have working knowledge of blockchain fundamentals and smart contract development, enabling me to contribute across a wide range of product and engineering challenges.",
   avatarUrl: "informal.jpg",
 
   skills: [
@@ -240,47 +240,47 @@ export const DATA = {
     },
   ],
 
-  education: [
-    {
-      school: "Amity University",
-      // href: "https://amity.edu",
-      degree: "BTECH CSE ( CGPA - 8.7/10 )",
-      logoUrl: "amity.jpeg",
-      start: "2019",
-      end: "2023",
-    },
-  ],
+  // education: [
+  //   {
+  //     school: "Amity University",
+  //     // href: "https://amity.edu",
+  //     degree: "BTECH CSE ( CGPA - 8.7/10 )",
+  //     logoUrl: "amity.jpeg",
+  //     start: "2019",
+  //     end: "2023",
+  //   },
+  // ],
   projects: [
-    {
-      title: "Podscrybe",
-      href: "https://github.com/shubhamsinha21/podscrybe",
-      active: true,
-      description:
-        "AI-Powered Podcast Pipeline that transforms raw podcast audio into clean transcripts, chapters, show notes, and summaries. Users can upload audio and instantly get organized content with chapter markers, titles, and concise summaries for easy consumption and publishing.",
-      technologies: [
-        "Next.js",
-        "React.js",
-        "Typescript",
-        "Shadcn UI",
-        "TailwindCSS",
-        "Radix UI",
-        "Clerk Auth",
-        "AssemblyAI",
-        "Groq SDK",
-        "Convex DB",
-        "Vercel Blob",
-        "Inngest",
-        "Vs Code",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/shubhamsinha21/podscrybe",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/projects/podscrybe.png",
-    },
+    // {
+    //   title: "Podscrybe",
+    //   href: "https://github.com/shubhamsinha21/podscrybe",
+    //   active: true,
+    //   description:
+    //     "AI-Powered Podcast Pipeline that transforms raw podcast audio into clean transcripts, chapters, show notes, and summaries. Users can upload audio and instantly get organized content with chapter markers, titles, and concise summaries for easy consumption and publishing.",
+    //   technologies: [
+    //     "Next.js",
+    //     "React.js",
+    //     "Typescript",
+    //     "Shadcn UI",
+    //     "TailwindCSS",
+    //     "Radix UI",
+    //     "Clerk Auth",
+    //     "AssemblyAI",
+    //     "Groq SDK",
+    //     "Convex DB",
+    //     "Vercel Blob",
+    //     "Inngest",
+    //     "Vs Code",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/shubhamsinha21/podscrybe",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/projects/podscrybe.png",
+    // },
     {
       title: "Spur Support",
       href: "https://github.com/shubhamsinha21/spur",
@@ -310,6 +310,26 @@ export const DATA = {
       image: "/projects/spur.png",
     },
     {
+      title: "CodeSpecto",
+      href: "https://github.com/shubhamsinha21/CodeSpecto",
+      active: true,
+      description: "CodeSpecto is an advanced AI code assistant designed for developers to analyze, debug, optimize, review, and secure their code projects. It provides actionable insights, code suggestions, and security recommendations in an interactive and stateful interface. ",
+      technologies: [
+        "Python",
+        "Gemini-API",
+        "Streamlit",
+        "Langchain"
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/shubhamsinha21/CodeSpecto",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/projects/codespecto.png",
+    },
+    {
       title: "Reddit Mastermind",
       href: "https://github.com/shubhamsinha21/reddit-mastermind",
       active: true,
@@ -332,37 +352,37 @@ export const DATA = {
       ],
       image: "/projects/reddit-mastermind.png",
     },
-    {
-      title: "InsightTicker",
-      href: "https://github.com/shubhamsinha21/insightticker",
-      active: true,
-      description:
-        "a full-stack stocks and financial-insights dashboard built by following a step-by-step YouTube tutorial. The goal is to create a modern, production- ready web application that combines authentication, database integration, real-time stock search, detailed market data, and automated daily news summaries.",
-      technologies: [
-        "Next.js",
-        "React.js",
-        "TailwindCSS",
-        "Typescript",
-        "Radix UI",
-        "Shadcn UI",
-        "Lucide Icons",
-        "Better Auth",
-        "Nextjs API Routes",
-        "MongoDB",
-        "Mongoose",
-        "Inngest",
-        "React Hook Form",
-        "Nodemailer",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/shubhamsinha21/insightticker",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/projects/insightticker.png",
-    },
+    // {
+    //   title: "InsightTicker",
+    //   href: "https://github.com/shubhamsinha21/insightticker",
+    //   active: true,
+    //   description:
+    //     "a full-stack stocks and financial-insights dashboard built by following a step-by-step YouTube tutorial. The goal is to create a modern, production- ready web application that combines authentication, database integration, real-time stock search, detailed market data, and automated daily news summaries.",
+    //   technologies: [
+    //     "Next.js",
+    //     "React.js",
+    //     "TailwindCSS",
+    //     "Typescript",
+    //     "Radix UI",
+    //     "Shadcn UI",
+    //     "Lucide Icons",
+    //     "Better Auth",
+    //     "Nextjs API Routes",
+    //     "MongoDB",
+    //     "Mongoose",
+    //     "Inngest",
+    //     "React Hook Form",
+    //     "Nodemailer",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/shubhamsinha21/insightticker",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/projects/insightticker.png",
+    // },
     {
       title: "CloudResize",
       href: "https://github.com/shubhamsinha21/CloudResize-SAAS",
@@ -542,36 +562,36 @@ export const DATA = {
   ],
   hackathons: [
     {
-      title: "Terrible Hacks V",
-      dates: "November 26th, 2016",
-      location: "Waterloo, Ontario",
+      title: "Hackxios 2K25",
+      dates: "November 29th, 2025",
+      location: "Online",
       description:
-        "Developed a mock of Windows 11 with interesting notifications and functionality",
+        "EcoLearn India is a web application that gamifies environmental education for Indian schools and colleges. The platform combines interactive lessons, quizzes, challenges, and real world participation, enabling students to learn, act and track their sustainable effort.",
       image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/terrible-hacks-v.png",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/justinmichaud/TerribleHacks2016-Windows11",
-        },
-      ],
+        "/hackxios.webp",
+      // links: [
+      //   {
+      //     title: "Source",
+      //     icon: <Icons.github className="h-4 w-4" />,
+      //     href: "https://github.com/justinmichaud/TerribleHacks2016-Windows11",
+      //   },
+      // ],
     },
-    {
-      title: "Portal Hackathon",
-      dates: "October 29, 2016",
-      location: "Kingston, Ontario",
-      description:
-        "Developed an internal widget for uploading assignments using Waterloo's portal app",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/portal-hackathon.png",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/UWPortalSDK/crowmark",
-        },
-      ],
-    },
+    // {
+    //   title: "Portal Hackathon",
+    //   dates: "October 29, 2016",
+    //   location: "Kingston, Ontario",
+    //   description:
+    //     "Developed an internal widget for uploading assignments using Waterloo's portal app",
+    //   image:
+    //     "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/portal-hackathon.png",
+    //   links: [
+    //     {
+    //       title: "Source",
+    //       icon: <Icons.github className="h-4 w-4" />,
+    //       href: "https://github.com/UWPortalSDK/crowmark",
+    //     },
+    //   ],
+    // },
   ],
 } as const;
