@@ -331,7 +331,7 @@ export const DATA = {
     },
     {
       title: "Reddit Mastermind",
-      href: "https://github.com/shubhamsinha21/reddit-mastermind",
+      href: "https://github.com/shubhamsinha21/the-reddit-mastermind",
       active: true,
       description:
         "An automated Reddit content calendar generator built with Python and Streamlit. It helps businesses plan posts, generate persona-driven comments, and simulate human-like Reddit interactions to boost engagement, upvotes, and inbound leads—reducing manual effort and streamlining Reddit growth.",
@@ -346,7 +346,7 @@ export const DATA = {
       links: [
         {
           type: "Source",
-          href: "https://github.com/shubhamsinha21/reddit-mastermind",
+          href: "https://github.com/shubhamsinha21/the-reddit-mastermind",
           icon: <Icons.github className="size-3" />,
         },
       ],
