@@ -11,7 +11,7 @@ import React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { ProjectCard } from "@/components/project-card";
-import { HackathonCard } from "@/components/hackathon-card";
+// import { HackathonCard } from "@/components/hackathon-card";
 
 export default function page() {
   return (
@@ -174,10 +174,11 @@ export default function page() {
       </section>
 
       {/* hackathons */}
-      <section id="hackathons">
-        <div className="space-y-12 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 13}>
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+   
+      {/* <section id="hackathons"> */}
+        {/* <div className="space-y-12 w-full py-12"> */}
+          {/* <BlurFade delay={BLUR_FADE_DELAY * 13}> */}
+            {/* <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                   Hackathons
@@ -186,9 +187,6 @@ export default function page() {
                   I like building things
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  {/* Recently, I attended{" "} */}
-                  {/* {DATA.hackathons.length}+  */}
-                  {/* hackathons.  */}
                   People from around the
                   country would come together and build incredible things in few
                   days. It was eye-opening to see the endless possibilities
@@ -196,10 +194,10 @@ export default function page() {
                   individuals.
                 </p>
               </div>
-            </div>
-          </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 14}>
-            <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
+            </div> */}
+          {/* </BlurFade> */}
+          {/* <BlurFade delay={BLUR_FADE_DELAY * 14}> */}
+            {/* <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
               {DATA.hackathons.map((project, id) => (
                 <BlurFade
                   key={project.title + project.dates}
@@ -215,10 +213,10 @@ export default function page() {
                   />
                 </BlurFade>
               ))}
-            </ul>
-          </BlurFade>
-        </div>
-      </section>
+            </ul> */}
+          {/* </BlurFade> */}
+        {/* </div> */}
+      {/* </section> */}
 
       {/* contact */}
       <section id="contact">

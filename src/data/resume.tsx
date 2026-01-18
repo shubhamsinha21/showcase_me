@@ -1,16 +1,34 @@
 import { Icons } from "@/components/ui/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { FileTextIcon, HomeIcon } from "lucide-react";
+
+import type { LucideIcon } from "lucide-react";
+
+type NavbarItem = {
+  href: string;
+  icon: LucideIcon;
+  label: string;
+  external?: boolean;
+};
+
+export const RESUME_URL =
+  "https://drive.google.com/file/d/1A47IZOvRbU9sqxGgs1sneInJFfmKIzI3/view?usp=sharing";
 
 export const DATA = {
   name: "Shubham Sinha",
   // initials: "DV",
   url: "https://dillion.io",
+
+  resume: {
+    label: "Resume",
+    url: RESUME_URL,
+  },
   // location: "",
   // locationLink: "",
   description:
-    "Software Engineer with experience building end-to-end products, combining AI systems, full-stack development, and automation workflows.",
+    "AI Product Engineer building production-grade LLM systems, conversational AI, and automation platforms used by real businesses.",
   summary:
-    "I’m a Software Engineer with hands-on experience building production-grade applications from prototype to deployment. Over the past two years, I’ve worked across full-stack development, AI-powered systems, and automation, delivering real-world solutions such as large-scale WhatsApp automation platforms and AI-driven media processing pipelines. My work focuses on designing scalable, reliable products by combining modern web technologies, applied machine learning, API-driven architectures, and cloud-native deployment practices. I also have working knowledge of blockchain fundamentals and smart contract development, enabling me to contribute across a wide range of product and engineering challenges.",
+    "I build AI-powered products that actually ship. Over the past 2+ years, I’ve worked across LLM systems, conversational AI, and full-stack engineering—taking ideas from early prototypes to production-ready platforms. My work includes large-scale WhatsApp automation for enterprise clients, LLM-driven chat systems, and AI media pipelines for video generation. I enjoy working at the intersection of product, engineering, and applied AI—designing systems that are scalable, reliable, and easy to integrate into real business workflows.",
+
   avatarUrl: "informal.jpg",
 
   skills: [
@@ -40,10 +58,7 @@ export const DATA = {
         "Express.js",
         "FastAPI",
         "Vercel AI SDK",
-        "Middleware Development",
-        "API Integration",
         "Postman",
-        "Authentication & Authorization",
       ],
     },
     {
@@ -55,37 +70,21 @@ export const DATA = {
       items: ["Docker", "AWS S3", "Vercel", "Linux", "CI/CD Basics"],
     },
     {
-      category: "AI / Machine Learning",
+      category: "AI / LLM Systems",
       items: [
         "Python",
-        "Machine Learning",
-        "Deep Learning",
-        "Neural Networks",
-        "Fine-Tuning LLMs",
-        "TensorFlow",
-        "PyTorch",
-        "Model Evaluation & Benchmarking",
-      ],
-    },
-    {
-      category: "AI Agents Frameworks",
-      items: [
-        "AI Agents",
         "LangChain",
-        "AutoGPT",
-        "N8N",
-        "CrewAI",
-        "LangGraph",
+        "Agent & Workflow Orchestration (LangChain, LangGraph, CrewAI, n8n)",
       ],
     },
     {
       category: "Data & Analytics",
       items: ["Power BI"],
     },
-    {
-      category: "Blockchain (Working Knowledge)",
-      items: ["Solidity", "Vyper", "Etherium", "Smart Contracts"],
-    },
+    // {
+    //   category: "Blockchain (Working Knowledge)",
+    //   items: ["Solidity", "Vyper", "Etherium", "Smart Contracts"],
+    // },
     {
       category: "Tools",
       items: [
@@ -104,9 +103,16 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     // { href: "/blog", icon: NotebookIcon, label: "Blog" },
-  ],
+    {
+      href: RESUME_URL,
+      icon: FileTextIcon,
+      label: "Resume",
+      external: true,
+    },
+  ] satisfies readonly NavbarItem[],
+
   contact: {
-    email: "shubhamsinha07084@gmail.com.com",
+    email: "shubhamsinha07084@gmail.com",
     // tel: "+123456789",
     social: {
       GitHub: {
@@ -155,13 +161,13 @@ export const DATA = {
       title: "AI / ML Solution Architect",
       logoUrl: "daveai_logo.jpeg",
       start: "Feb 2025",
-      end: "Present",
+      end: "Nov 2025",
       description: [
-        "Designing conversational AI flows on Gryd for large-scale WhatsApp interactions across enterprise clients.",
-        "Integrating and maintaining Airtel WhatsApp APIs for message handling and automated campaigns.",
-        "Developing logic for dealership onboarding and multilingual campaign flows for pre- and post-sales journeys.",
-        "Collaborating with AI/product teams to align LLM capabilities with automotivebusiness needs.",
-        "Debugging API payloads, improving trigger reliability, and maintaining integration documentation.",
+        "Built and scaled WhatsApp-based conversational AI systems used by enterprise automotive clients for pre-sales and post-sales workflows.",
+        "Designed AI conversation logic on Gryd, enabling multilingual customer journeys, dealer onboarding, and campaign automation.",
+        "Integrated Airtel WhatsApp APIs for reliable message delivery, trigger-based campaigns, and system-level automation.",
+        "Worked closely with product and AI teams to align LLM behavior with real-world business constraints.",
+        "Improved system reliability by debugging payloads, optimizing flow triggers, and maintaining integration documentation.",
       ],
     },
     {
@@ -174,10 +180,10 @@ export const DATA = {
       start: "Nov 2024",
       end: "Feb 2025",
       description: [
-        "Built Gryd pipelines for AI-driven video generation (talking-head synthesis, lip-sync, and masking).",
-        "Developed APIs for real-time video synchronization and internal tool integration.",
-        "Handled deployment and production readiness of video generation workflows.",
-        "Created clear documentation for setup, parameters, and pipeline integration.",
+        "Developed AI-driven video generation pipelines including talking-head synthesis, lip-sync enhancement, and face masking.",
+        "Built backend APIs for real-time video generation and synchronization across internal tools.",
+        "Benchmarked video generation tools (D-ID vs Retalk) and improved lip-sync quality through fine-tuning and evaluation.",
+        "Prepared production-ready pipelines with clear documentation for reuse across teams.",
       ],
     },
     {
@@ -190,11 +196,10 @@ export const DATA = {
       start: "Jul 2024",
       end: "Nov 2024",
       description: [
-        "Supported avatar generation pipelines using image processing and video overlay scripting.",
-        "Improved lip-sync accuracy via fine-tuning and benchmarking models (D-ID vs Retalk).",
-        "Wrote evaluation scripts in Google Colab, generated embeddings, and measured similarity scores.",
-        "Conducted MOS-based evaluations to assess video generation quality.",
-        "Automated video generation tasks via Gryd worker scripts for production pipelines.",
+        "Assisted in building AI-driven video generation pipelines including avatar synthesis and lip-sync workflows.",
+        "Supported benchmarking and evaluation of video generation tools (D-ID vs Retalk).",
+        "Wrote Python scripts in Google Colab for experimentation, evaluation, and quality analysis.",
+        "Learned production AI workflows, documentation practices, and pipeline deployment processes.",
       ],
     },
     {
@@ -207,8 +212,9 @@ export const DATA = {
       start: "Nov 2023",
       end: "Apr 2024",
       description: [
-        "Built mobile application UIs using React Native and Tailwind CSS.",
-        "Contributed across the full app lifecycle including design, development, and deployment.",
+        "Developed production-ready mobile application interfaces using React Native and Tailwind CSS.",
+        "Implemented reusable UI components, state management, and API integrations for real-world app features.",
+        "Collaborated across design and development to ship features from concept to production.",
       ],
     },
     {
@@ -221,8 +227,10 @@ export const DATA = {
       start: "Feb 2023",
       end: "Jun 2023",
       description: [
-        "Developed and optimized the company website using React.js and Next.js.",
-        "Built scalable, responsive frontend components following best practices.",
+        "Designed and developed responsive web interfaces using React.js and Next.js for the company website and internal business platforms.",
+        "Implemented reusable, component-driven frontend architecture to improve maintainability and development speed.",
+        "Optimized page load performance and cross-device responsiveness using modern frontend best practices.",
+        "Collaborated with designers and backend teams to translate requirements into clean, production-ready UI components.",
       ],
     },
     {
@@ -285,10 +293,12 @@ export const DATA = {
       title: "Spur Support",
       href: "https://github.com/shubhamsinha21/spur",
       active: true,
-      description: "A mini AI support agent simulating a live chat widget for e-commerce using React, Node.js, PostgreSQL, Redis, and OpenAI GPT-4o-mini. Features include end-to-end AI conversation, session persistence, typing indicators, suggested questions for quick start, and a modern responsive UI. Fully deployed with backend on Render and frontend on Vercel.",
+      description:
+        "An AI-powered customer support system that simulates real-time chat for e-commerce platforms. It handles end-to-end LLM conversations with session persistence, typing indicators, suggested prompts, and a production-ready backend. Designed to feel like a real human support agent while remaining scalable and cost-efficient.",
+
       technologies: [
         "React.js",
-        "Vite" ,
+        "Vite",
         "Typescript",
         "PostgreSQL",
         "TailwindCSS",
@@ -297,7 +307,7 @@ export const DATA = {
         "Redis",
         "OpenAI GPT-4o-mini",
         "Render",
-        "Vercel", 
+        "Vercel",
         "LLM Integration - openAI GPT-4o-mini",
       ],
       links: [
@@ -313,13 +323,10 @@ export const DATA = {
       title: "CodeSpecto",
       href: "https://github.com/shubhamsinha21/CodeSpecto",
       active: true,
-      description: "CodeSpecto is an advanced AI code assistant designed for developers to analyze, debug, optimize, review, and secure their code projects. It provides actionable insights, code suggestions, and security recommendations in an interactive and stateful interface. ",
-      technologies: [
-        "Python",
-        "Gemini-API",
-        "Streamlit",
-        "Langchain"
-      ],
+      description:
+        "An AI-driven code analysis assistant that helps developers debug, optimize, review, and secure codebases. It delivers structured, actionable feedback through an interactive interface, making advanced code analysis accessible during development.",
+
+      technologies: ["Python", "Gemini-API", "Streamlit", "Langchain"],
       links: [
         {
           type: "Source",
@@ -334,14 +341,15 @@ export const DATA = {
       href: "https://github.com/shubhamsinha21/the-reddit-mastermind",
       active: true,
       description:
-        "An automated Reddit content calendar generator built with Python and Streamlit. It helps businesses plan posts, generate persona-driven comments, and simulate human-like Reddit interactions to boost engagement, upvotes, and inbound leads—reducing manual effort and streamlining Reddit growth.",
+        "An automation platform for planning and executing Reddit content strategies. It generates persona-based posts and comments, simulates human-like engagement, and helps businesses grow organically on Reddit with minimal manual effort.",
+
       technologies: [
         "Streamlit",
         "Python",
         "Pandas",
         "Openpyxl",
         "python-dotenv",
-        "Vs Code"
+        "Vs Code",
       ],
       links: [
         {
@@ -410,188 +418,187 @@ export const DATA = {
       ],
       image: "/projects/cloudresize.png",
     },
-    {
-      title: "Web Bot",
-      href: "https://github.com/shubhamsinha21/WebBot",
-      active: true,
-      description:
-        "Your one-stop shop for navigating the vast sea of web information with ease! This AI-powered assistant leverages cutting-edge technologies to seamlessly answer your questions directly from any website you visit.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "Middleware",
-        "Next UI",
-        "TailwindCSS",
-        "Dev UI",
-        "Shadcn UI",
-        "Vercel AI SDK",
-        "Upstash Vector",
-        "Upstash SDK",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/shubhamsinha21/WebBot",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/projects/webbot.png",
-    },
-    {
-      title: "Nike",
-      href: "https://github.com/shubhamsinha21/Nike",
-      active: true,
-      description:
-        "A modern e-commerce storefront inspired by Nike’s product ecosystem, featuring product listings, customer testimonials, promotional sections, and a responsive shopping experience. The project focuses on UI/UX consistency, component-driven architecture, and performance-optimized layouts for real-world e-commerce use cases.",
-      technologies: [
-        "React.js",
-        "JavaScript",
-        "Css",
-        "TailwindCSS",
-        "VS Code",
-        "Git & GitHub",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/shubhamsinha21/Nike",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/projects/nike.png",
-    },
-    {
-      title: "Casino",
-      href: "https://github.com/shubhamsinha21/casino",
-      active: true,
-      description:
-        "A high-end marketing and booking platform built for a luxury casino experience in Goa. The website showcases entertainment offerings, live events, VIP packages, and booking workflows with a strong focus on visual storytelling and user engagement. Designed to reflect a premium brand identity while driving conversions through structured content and clear CTAs.",
-      technologies: [
-        "React.js",
-        "JavaScript",
-        "Css",
-        "TailwindCSS",
-        "VS Code",
-        "Git & GitHub",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/shubhamsinha21/casino",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/projects/casino.png",
-    },
-    {
-      title: "AI SEO",
-      href: "https://github.com/shubhamsinha21/AI-SEO",
-      active: true,
-      description:
-        "AI SEO is an AI-driven SEO automation platform that helps businesses improve search rankings through intelligent keyword research, content optimization, and SEO analytics. It automates traditionally manual SEO workflows using machine learning models and data-driven insights, making SEO accessible to startups and enterprise teams through a clean, user-friendly dashboard.",
-      technologies: [
-        "React.js",
-        "Next.js",
-        "TailwindCSS",
-        "VS Code",
-        "Git & GitHub",
-        "Tailwind-merge",
-        "Framer Motion",
-        "Typescript",
-        "Lottie files",
-        "Vercel",
-        "VS Code",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/shubhamsinha21/AI-SEO",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/projects/aiseo.png",
-    },
-    {
-      title: "Virtual-R",
-      href: "https://github.com/shubhamsinha21/virtual-R",
-      active: true,
-      description:
-        "VirtualR is a developer-focused platform for building and managing VR applications using a visual, drag-and-drop workflow. It supports multi-platform deployment, real-time previews, collaboration tools, and built-in analytics to streamline VR development. The platform is designed to accelerate VR prototyping while enabling teams to iterate quickly with AI-assisted tooling.",
-      technologies: [
-        "React.js",
-        "TailwindCSS",
-        "VS Code",
-        "Git & GitHub",
-        "Javascript",
-        "Vercel",
-        "VS Code",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/shubhamsinha21/virtual-R",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/projects/virtualr.png",
-    },
-    {
-      title: "To-Desktop",
-      href: "https://github.com/shubhamsinha21/ToDesktop",
-      active: true,
-      description:
-        "ToDesktop is a platform that converts existing web applications into fully functional, cross-platform desktop apps for Windows, macOS, and Linux. It enables developers to bootstrap desktop apps directly from a web URL while providing native features like notifications, tray access, and system integrations. The product focuses on reducing desktop app development complexity while maintaining a polished, native user experience.",
-      technologies: [
-        "React.js",
-        "TailwindCSS",
-        "VS Code",
-        "Git & GitHub",
-        "Javascript",
-        "Vercel",
-        "VS Code",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/shubhamsinha21/ToDesktop",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/projects/todesktop.png",
-    },
-  ],
-  hackathons: [
-    {
-      title: "Hackxios 2K25",
-      dates: "November 29th, 2025",
-      location: "Online",
-      description:
-        "EcoLearn India is a web application that gamifies environmental education for Indian schools and colleges. The platform combines interactive lessons, quizzes, challenges, and real world participation, enabling students to learn, act and track their sustainable effort.",
-      image:
-        "/hackxios.webp",
-      // links: [
-      //   {
-      //     title: "Source",
-      //     icon: <Icons.github className="h-4 w-4" />,
-      //     href: "https://github.com/justinmichaud/TerribleHacks2016-Windows11",
-      //   },
-      // ],
-    },
     // {
-    //   title: "Portal Hackathon",
-    //   dates: "October 29, 2016",
-    //   location: "Kingston, Ontario",
+    //   title: "Web Bot",
+    //   href: "https://github.com/shubhamsinha21/WebBot",
+    //   active: true,
     //   description:
-    //     "Developed an internal widget for uploading assignments using Waterloo's portal app",
-    //   image:
-    //     "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/portal-hackathon.png",
+    //     "Your one-stop shop for navigating the vast sea of web information with ease! This AI-powered assistant leverages cutting-edge technologies to seamlessly answer your questions directly from any website you visit.",
+    //   technologies: [
+    //     "Next.js",
+    //     "Typescript",
+    //     "Middleware",
+    //     "Next UI",
+    //     "TailwindCSS",
+    //     "Dev UI",
+    //     "Shadcn UI",
+    //     "Vercel AI SDK",
+    //     "Upstash Vector",
+    //     "Upstash SDK",
+    //   ],
     //   links: [
     //     {
-    //       title: "Source",
-    //       icon: <Icons.github className="h-4 w-4" />,
-    //       href: "https://github.com/UWPortalSDK/crowmark",
+    //       type: "Source",
+    //       href: "https://github.com/shubhamsinha21/WebBot",
+    //       icon: <Icons.github className="size-3" />,
     //     },
     //   ],
+    //   image: "/projects/webbot.png",
+    // },
+    // {
+    //   title: "Nike",
+    //   href: "https://github.com/shubhamsinha21/Nike",
+    //   active: true,
+    //   description:
+    //     "A modern e-commerce storefront inspired by Nike’s product ecosystem, featuring product listings, customer testimonials, promotional sections, and a responsive shopping experience. The project focuses on UI/UX consistency, component-driven architecture, and performance-optimized layouts for real-world e-commerce use cases.",
+    //   technologies: [
+    //     "React.js",
+    //     "JavaScript",
+    //     "Css",
+    //     "TailwindCSS",
+    //     "VS Code",
+    //     "Git & GitHub",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/shubhamsinha21/Nike",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/projects/nike.png",
+    // },
+    // {
+    //   title: "Casino",
+    //   href: "https://github.com/shubhamsinha21/casino",
+    //   active: true,
+    //   description:
+    //     "A high-end marketing and booking platform built for a luxury casino experience in Goa. The website showcases entertainment offerings, live events, VIP packages, and booking workflows with a strong focus on visual storytelling and user engagement. Designed to reflect a premium brand identity while driving conversions through structured content and clear CTAs.",
+    //   technologies: [
+    //     "React.js",
+    //     "JavaScript",
+    //     "Css",
+    //     "TailwindCSS",
+    //     "VS Code",
+    //     "Git & GitHub",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/shubhamsinha21/casino",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/projects/casino.png",
+    // },
+    // {
+    //   title: "AI SEO",
+    //   href: "https://github.com/shubhamsinha21/AI-SEO",
+    //   active: true,
+    //   description:
+    //     "AI SEO is an AI-driven SEO automation platform that helps businesses improve search rankings through intelligent keyword research, content optimization, and SEO analytics. It automates traditionally manual SEO workflows using machine learning models and data-driven insights, making SEO accessible to startups and enterprise teams through a clean, user-friendly dashboard.",
+    //   technologies: [
+    //     "React.js",
+    //     "Next.js",
+    //     "TailwindCSS",
+    //     "VS Code",
+    //     "Git & GitHub",
+    //     "Tailwind-merge",
+    //     "Framer Motion",
+    //     "Typescript",
+    //     "Lottie files",
+    //     "Vercel",
+    //     "VS Code",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/shubhamsinha21/AI-SEO",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/projects/aiseo.png",
+    // },
+    // {
+    //   title: "Virtual-R",
+    //   href: "https://github.com/shubhamsinha21/virtual-R",
+    //   active: true,
+    //   description:
+    //     "VirtualR is a developer-focused platform for building and managing VR applications using a visual, drag-and-drop workflow. It supports multi-platform deployment, real-time previews, collaboration tools, and built-in analytics to streamline VR development. The platform is designed to accelerate VR prototyping while enabling teams to iterate quickly with AI-assisted tooling.",
+    //   technologies: [
+    //     "React.js",
+    //     "TailwindCSS",
+    //     "VS Code",
+    //     "Git & GitHub",
+    //     "Javascript",
+    //     "Vercel",
+    //     "VS Code",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/shubhamsinha21/virtual-R",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/projects/virtualr.png",
+    // },
+    // {
+    //   title: "To-Desktop",
+    //   href: "https://github.com/shubhamsinha21/ToDesktop",
+    //   active: true,
+    //   description:
+    //     "ToDesktop is a platform that converts existing web applications into fully functional, cross-platform desktop apps for Windows, macOS, and Linux. It enables developers to bootstrap desktop apps directly from a web URL while providing native features like notifications, tray access, and system integrations. The product focuses on reducing desktop app development complexity while maintaining a polished, native user experience.",
+    //   technologies: [
+    //     "React.js",
+    //     "TailwindCSS",
+    //     "VS Code",
+    //     "Git & GitHub",
+    //     "Javascript",
+    //     "Vercel",
+    //     "VS Code",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/shubhamsinha21/ToDesktop",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/projects/todesktop.png",
     // },
   ],
+  // hackathons: [
+  //   {
+  //     title: "Hackxios 2K25",
+  //     dates: "November 29th, 2025",
+  //     location: "Online",
+  //     description:
+  //       "EcoLearn India is a web application that gamifies environmental education for Indian schools and colleges. The platform combines interactive lessons, quizzes, challenges, and real world participation, enabling students to learn, act and track their sustainable effort.",
+  //     image: "/hackxios.webp",
+  //     // links: [
+  //     //   {
+  //     //     title: "Source",
+  //     //     icon: <Icons.github className="h-4 w-4" />,
+  //     //     href: "https://github.com/justinmichaud/TerribleHacks2016-Windows11",
+  //     //   },
+  //     // ],
+  //   },
+  //   // {
+  //   //   title: "Portal Hackathon",
+  //   //   dates: "October 29, 2016",
+  //   //   location: "Kingston, Ontario",
+  //   //   description:
+  //   //     "Developed an internal widget for uploading assignments using Waterloo's portal app",
+  //   //   image:
+  //   //     "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/portal-hackathon.png",
+  //   //   links: [
+  //   //     {
+  //   //       title: "Source",
+  //   //       icon: <Icons.github className="h-4 w-4" />,
+  //   //       href: "https://github.com/UWPortalSDK/crowmark",
+  //   //     },
+  //   //   ],
+  //   // },
+  // ],
 } as const;
