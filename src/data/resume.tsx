@@ -25,7 +25,7 @@ export const DATA = {
   // location: "",
   // locationLink: "",
   description:
-    "AI Product Engineer building production-grade LLM systems, conversational AI, and automation platforms used by real businesses.",
+    "AI/ML Engineer building production-grade LLM systems, conversational AI, and automation platforms used by real businesses.",
   summary:
     "I build AI-powered products that actually ship. Over the past 2+ years, I’ve worked across LLM systems, conversational AI, and full-stack engineering—taking ideas from early prototypes to production-ready platforms. My work includes large-scale WhatsApp automation for enterprise clients, LLM-driven chat systems, and AI media pipelines for video generation. I enjoy working at the intersection of product, engineering, and applied AI—designing systems that are scalable, reliable, and easy to integrate into real business workflows.",
 
