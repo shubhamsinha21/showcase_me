@@ -11,7 +11,7 @@ type NavbarItem = {
 };
 
 export const RESUME_URL =
-  "https://drive.google.com/file/d/1A47IZOvRbU9sqxGgs1sneInJFfmKIzI3/view?usp=sharing";
+  "https://drive.google.com/file/d/1MF4JrkcrRMN3n7caqwvY0-27jQsbUNrg/view?usp=sharing";
 
 export const DATA = {
   name: "Shubham Sinha",
