@@ -418,107 +418,107 @@ export const DATA = {
       ],
       image: "/projects/cloudresize.png",
     },
-    // {
-    //   title: "Web Bot",
-    //   href: "https://github.com/shubhamsinha21/WebBot",
-    //   active: true,
-    //   description:
-    //     "Your one-stop shop for navigating the vast sea of web information with ease! This AI-powered assistant leverages cutting-edge technologies to seamlessly answer your questions directly from any website you visit.",
-    //   technologies: [
-    //     "Next.js",
-    //     "Typescript",
-    //     "Middleware",
-    //     "Next UI",
-    //     "TailwindCSS",
-    //     "Dev UI",
-    //     "Shadcn UI",
-    //     "Vercel AI SDK",
-    //     "Upstash Vector",
-    //     "Upstash SDK",
-    //   ],
-    //   links: [
-    //     {
-    //       type: "Source",
-    //       href: "https://github.com/shubhamsinha21/WebBot",
-    //       icon: <Icons.github className="size-3" />,
-    //     },
-    //   ],
-    //   image: "/projects/webbot.png",
-    // },
-    // {
-    //   title: "Nike",
-    //   href: "https://github.com/shubhamsinha21/Nike",
-    //   active: true,
-    //   description:
-    //     "A modern e-commerce storefront inspired by Nike’s product ecosystem, featuring product listings, customer testimonials, promotional sections, and a responsive shopping experience. The project focuses on UI/UX consistency, component-driven architecture, and performance-optimized layouts for real-world e-commerce use cases.",
-    //   technologies: [
-    //     "React.js",
-    //     "JavaScript",
-    //     "Css",
-    //     "TailwindCSS",
-    //     "VS Code",
-    //     "Git & GitHub",
-    //   ],
-    //   links: [
-    //     {
-    //       type: "Source",
-    //       href: "https://github.com/shubhamsinha21/Nike",
-    //       icon: <Icons.github className="size-3" />,
-    //     },
-    //   ],
-    //   image: "/projects/nike.png",
-    // },
-    // {
-    //   title: "Casino",
-    //   href: "https://github.com/shubhamsinha21/casino",
-    //   active: true,
-    //   description:
-    //     "A high-end marketing and booking platform built for a luxury casino experience in Goa. The website showcases entertainment offerings, live events, VIP packages, and booking workflows with a strong focus on visual storytelling and user engagement. Designed to reflect a premium brand identity while driving conversions through structured content and clear CTAs.",
-    //   technologies: [
-    //     "React.js",
-    //     "JavaScript",
-    //     "Css",
-    //     "TailwindCSS",
-    //     "VS Code",
-    //     "Git & GitHub",
-    //   ],
-    //   links: [
-    //     {
-    //       type: "Source",
-    //       href: "https://github.com/shubhamsinha21/casino",
-    //       icon: <Icons.github className="size-3" />,
-    //     },
-    //   ],
-    //   image: "/projects/casino.png",
-    // },
-    // {
-    //   title: "AI SEO",
-    //   href: "https://github.com/shubhamsinha21/AI-SEO",
-    //   active: true,
-    //   description:
-    //     "AI SEO is an AI-driven SEO automation platform that helps businesses improve search rankings through intelligent keyword research, content optimization, and SEO analytics. It automates traditionally manual SEO workflows using machine learning models and data-driven insights, making SEO accessible to startups and enterprise teams through a clean, user-friendly dashboard.",
-    //   technologies: [
-    //     "React.js",
-    //     "Next.js",
-    //     "TailwindCSS",
-    //     "VS Code",
-    //     "Git & GitHub",
-    //     "Tailwind-merge",
-    //     "Framer Motion",
-    //     "Typescript",
-    //     "Lottie files",
-    //     "Vercel",
-    //     "VS Code",
-    //   ],
-    //   links: [
-    //     {
-    //       type: "Source",
-    //       href: "https://github.com/shubhamsinha21/AI-SEO",
-    //       icon: <Icons.github className="size-3" />,
-    //     },
-    //   ],
-    //   image: "/projects/aiseo.png",
-    // },
+    {
+      title: "Web Bot",
+      href: "https://github.com/shubhamsinha21/WebBot",
+      active: true,
+      description:
+        "Your one-stop shop for navigating the vast sea of web information with ease! This AI-powered assistant leverages cutting-edge technologies to seamlessly answer your questions directly from any website you visit.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "Middleware",
+        "Next UI",
+        "TailwindCSS",
+        "Dev UI",
+        "Shadcn UI",
+        "Vercel AI SDK",
+        "Upstash Vector",
+        "Upstash SDK",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/shubhamsinha21/WebBot",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/projects/webbot.png",
+    },
+    {
+      title: "Nike",
+      href: "https://github.com/shubhamsinha21/Nike",
+      active: true,
+      description:
+        "A modern e-commerce storefront inspired by Nike’s product ecosystem, featuring product listings, customer testimonials, promotional sections, and a responsive shopping experience. The project focuses on UI/UX consistency, component-driven architecture, and performance-optimized layouts for real-world e-commerce use cases.",
+      technologies: [
+        "React.js",
+        "JavaScript",
+        "Css",
+        "TailwindCSS",
+        "VS Code",
+        "Git & GitHub",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/shubhamsinha21/Nike",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/projects/nike.png",
+    },
+    {
+      title: "Casino",
+      href: "https://github.com/shubhamsinha21/casino",
+      active: true,
+      description:
+        "A high-end marketing and booking platform built for a luxury casino experience in Goa. The website showcases entertainment offerings, live events, VIP packages, and booking workflows with a strong focus on visual storytelling and user engagement. Designed to reflect a premium brand identity while driving conversions through structured content and clear CTAs.",
+      technologies: [
+        "React.js",
+        "JavaScript",
+        "Css",
+        "TailwindCSS",
+        "VS Code",
+        "Git & GitHub",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/shubhamsinha21/casino",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/projects/casino.png",
+    },
+    {
+      title: "AI SEO",
+      href: "https://github.com/shubhamsinha21/AI-SEO",
+      active: true,
+      description:
+        "AI SEO is an AI-driven SEO automation platform that helps businesses improve search rankings through intelligent keyword research, content optimization, and SEO analytics. It automates traditionally manual SEO workflows using machine learning models and data-driven insights, making SEO accessible to startups and enterprise teams through a clean, user-friendly dashboard.",
+      technologies: [
+        "React.js",
+        "Next.js",
+        "TailwindCSS",
+        "VS Code",
+        "Git & GitHub",
+        "Tailwind-merge",
+        "Framer Motion",
+        "Typescript",
+        "Lottie files",
+        "Vercel",
+        "VS Code",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/shubhamsinha21/AI-SEO",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/projects/aiseo.png",
+    },
     // {
     //   title: "Virtual-R",
     //   href: "https://github.com/shubhamsinha21/virtual-R",
