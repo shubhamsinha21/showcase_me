@@ -321,7 +321,7 @@ export const DATA = {
 
      {
       title: "Yojana AI",
-      href: "https://github.com/shubhamsinha21/yojana-ai",
+      href: "https://github.com/shubhamsinha21/Policy-to-Action-AI",
       active: true,
       description:
         "YojanaAI is an AI-powered platform that helps citizens discover government schemes they are eligible for based on their personal profile such as occupation, income, state, and land ownership. It provides personalized scheme recommendations, application guidance, and eligibility insights to empower users to access government benefits effectively.",
@@ -339,7 +339,7 @@ export const DATA = {
       links: [
         {
           type: "Source",
-          href: "https://github.com/shubhamsinha21/Yojana-AI",
+          href: "https://github.com/shubhamsinha21/Policy-to-Action-AI",
           icon: <Icons.github className="size-3" />,
         },
       ], 
