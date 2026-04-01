@@ -27,7 +27,7 @@ export const DATA = {
   description:
     "I build backend-driven AI and Web3 systems where real-time events trigger intelligent workflows.",
   summary:
-    "I build systems that connect intelligent models with real-world workflows. Over the past 2+ years, I’ve worked on LLM-powered platforms, large-scale WhatsApp automation, and backend-heavy systems used in production environments. My work involves designing end-to-end flows handling everything from model integration and APIs to user interaction and system orchestration. Recently, I’ve been extending this into Web3, building systems where on-chain events trigger backend logic, combining decentralized components with traditional backend architectures. I’m most comfortable working on problems that involve multiple moving parts—APIs, asynchronous workflows, automation, and real-time systems—and turning them into something reliable and usable.",
+    "I build systems that connect intelligent models with real-world workflows. Over the past 2+ years, I’ve worked on LLM-powered platforms, large-scale WhatsApp automation, and backend-heavy systems used in production environments. My work involves designing end-to-end flows handling everything from model integration and APIs to user interaction and system orchestration. Recently, I’ve been extending this into Web3, building systems where on-chain events trigger backend logic, combining decentralized components with traditional backend architectures. I’m most comfortable working on problems that involve multiple moving parts - APIs, asynchronous workflows, automation, and real-time systems and turning them into something reliable and usable.",
 
   avatarUrl: "informal.jpg",
 
