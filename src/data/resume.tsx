@@ -289,7 +289,63 @@ export const DATA = {
     //   ],
     //   image: "/projects/podscrybe.png",
     // },
-    {
+
+      {
+      title: "EventChain",
+      href: "https://github.com/shubhamsinha21/EventChain",
+      active: true,
+      description:
+        "This project demonstrates how on-chain smart contract events can trigger backend workflows, simulating real-world Web3 system design. It goes beyond basic contract interaction by connecting frontend actions to backend processing through blockchain events. The system uses block-based polling for reliable event detection, reflecting production-grade patterns used in scalable Web3 applications.",
+      technologies: [
+      "Solidity",
+      "Ethers.js",
+      "Node.js",
+      "Express.js",
+      "React.js",
+      "TailwindCSS",
+      "Hardhat",
+      "Github",
+      "Metamask",
+      "Remix IDE",
+      "Vs Code",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/shubhamsinha21/EventChain",
+          icon: <Icons.github className="size-3" />,
+        },
+      ], 
+      image: "/projects/eventchain.png",
+    },
+
+     {
+      title: "Yojana AI",
+      href: "https://github.com/shubhamsinha21/yojana-ai",
+      active: true,
+      description:
+        "YojanaAI is an AI-powered platform that helps citizens discover government schemes they are eligible for based on their personal profile such as occupation, income, state, and land ownership. It provides personalized scheme recommendations, application guidance, and eligibility insights to empower users to access government benefits effectively.",
+
+      technologies: [
+       "Python",
+       "Streamlit",
+       "OpenAI GPT-4o-mini",
+       "Pandas",
+       "Openpyxl",
+       "python-dotenv",
+       "Vs Code",
+       "Git & GitHub"
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/shubhamsinha21/Yojana-AI",
+          icon: <Icons.github className="size-3" />,
+        },
+      ], 
+      image: "/projects/yojana-ai.png",
+    },
+   {
       title: "Spur Support",
       href: "https://github.com/shubhamsinha21/spur",
       active: true,
@@ -316,7 +372,7 @@ export const DATA = {
           href: "https://github.com/shubhamsinha21/spur",
           icon: <Icons.github className="size-3" />,
         },
-      ],
+      ], 
       image: "/projects/spur.png",
     },
     {
