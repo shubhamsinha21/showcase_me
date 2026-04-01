@@ -25,9 +25,9 @@ export const DATA = {
   // location: "",
   // locationLink: "",
   description:
-    "AI/ML Engineer building production-grade LLM systems, conversational AI, and automation platforms used by real businesses.",
+    "I build backend-driven AI and Web3 systems where real-time events trigger intelligent workflows.",
   summary:
-    "I build AI-powered products that actually ship. Over the past 2+ years, I’ve worked across LLM systems, conversational AI, and full-stack engineering—taking ideas from early prototypes to production-ready platforms. My work includes large-scale WhatsApp automation for enterprise clients, LLM-driven chat systems, and AI media pipelines for video generation. I enjoy working at the intersection of product, engineering, and applied AI—designing systems that are scalable, reliable, and easy to integrate into real business workflows.",
+    "I build systems that connect intelligent models with real-world workflows. Over the past 2+ years, I’ve worked on LLM-powered platforms, large-scale WhatsApp automation, and backend-heavy systems used in production environments. My work involves designing end-to-end flows handling everything from model integration and APIs to user interaction and system orchestration. Recently, I’ve been extending this into Web3, building systems where on-chain events trigger backend logic, combining decentralized components with traditional backend architectures. I’m most comfortable working on problems that involve multiple moving parts—APIs, asynchronous workflows, automation, and real-time systems—and turning them into something reliable and usable.",
 
   avatarUrl: "informal.jpg",
 
